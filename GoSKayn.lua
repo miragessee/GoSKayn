@@ -5,6 +5,12 @@ if not pcall( require, "Inspired" ) then PrintChat("You are missing Inspired.lua
 PrintChat("Kayn loaded.")
 PrintChat("Hold Space Combo")
 
+local mainMenu = Menu("Kayn", "Kayn")
+mainMenu:Menu("Combo", "Combo")
+mainMenu.Combo:Key("Combo1", "Combo", string.byte(" "))
+------------------------------------------------------------------
+
+
 function GetRdmg()
 
 	local totalDmg = 0
